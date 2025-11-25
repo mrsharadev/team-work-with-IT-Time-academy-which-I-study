@@ -1,0 +1,104 @@
+.hero {
+    width: 100%;
+    padding: 50px 0px;
+    position: absolute;
+    z-index: 2;
+    top: 70px;
+    &_container {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    &_content {
+        width: 60%;
+    }
+    &_form {
+        display: flex;
+        gap: 20px;
+
+        label {
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 0%;
+            color: #C3E0FF;
+        }
+
+        input[type="radio"] {
+            accent-color: #F4D182;
+        }
+    }
+
+    &_title {
+        font-weight: 500;
+        font-style: Regular;
+        font-size: 43px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &_text {
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 22px;
+        line-height: 140%;
+        letter-spacing: 0%;
+        color: white;
+        margin-top: 20px;
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+        margin-top: 10px;
+
+        &_item {
+            width: 27%;
+            height: 81px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #124795;
+            backdrop-filter: blur(30px);
+            border-radius: 6px;
+            padding-left: 20px;
+
+            p {
+                font-weight: 400;
+                font-style: SemiBold;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0%;
+                color: white;
+            }
+
+            span {
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0%;
+                color: white;
+            }
+        }
+    }
+    &_button {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+        p {
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: #C3E0FF;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@use "usat_students";
+@use "navbar";
+@use "hero";
+@use "about";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 286px;
+    padding: 25px 0px;
+    color: #002761;
+    background-color: #F4D182;
+    backdrop-filter: blur(60px);
+    border: 1.52px solid #FFE7AB;
+    border-radius: 6px;
+    transition: 0.5s all;
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: 86%;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Mask\ group\ \(8\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(44.14% 61.78% at 71.93% 53.13%, rgba(0, 39, 97, 0) 0%, rgba(0, 39, 97, 0.6) 47.5%, #002761 100%);
+}
