@@ -1,0 +1,124 @@
+.grant-section {
+  background: #002164 url('/mnt/data/9cf3e46e-93f4-4b30-9c3e-46a417e492e3.png') no-repeat center / cover;
+  padding: 4rem 2rem;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+    strong {
+      font-weight: 700;
+    }
+
+    span {
+      font-weight: 700;
+      color: #f1c96d;
+    }
+  }
+
+  .cards-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-width: 220px;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        background-color: #22447a;
+        border-radius: 8px;
+        flex-shrink: 0;
+        position: relative;
+
+        &.trophy::before {
+          content: "🏆";
+          font-size: 24px;
+          position: absolute;
+          top: 7px;
+          left: 8px;
+        }
+
+        &.payment::before {
+          content: "💳";
+          font-size: 24px;
+          position: absolute;
+          top: 7px;
+          left: 8px;
+        }
+
+        &.info::before {
+          content: "📄";
+          font-size: 24px;
+          position: absolute;
+          top: 7px;
+          left: 10px;
+        }
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  .action-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+
+    .main-btn {
+      background: linear-gradient(90deg, #f1c96d 0%, #f7e3b3 100%);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #002164;
+      box-shadow: 0 4px 10px rgba(241, 201, 109, 0.6);
+
+      &:hover {
+        background: linear-gradient(90deg, #f7e3b3 0%, #f1c96d 100%);
+      }
+    }
+
+    .arrow {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #f1c96d;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+      pointer-events: none;
+      position: absolute;
+      bottom: -15px;
+      left: 180px;
+    }
+  }
+}
